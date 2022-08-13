@@ -22,9 +22,5 @@
             return finalCost;
         }
 
-        public static string CarpetQuote(decimal area, decimal finalCost)
-        {
-            return "Room Area " + area + "sqm $ " + finalCost;
-        }
     }
 }

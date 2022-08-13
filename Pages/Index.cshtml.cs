@@ -1,7 +1,7 @@
-﻿using CarpetCostCalculator.Model;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CarpetCostCalculator.Operations;
+using CarpetCostCalculator.Model;
 
 namespace CarpetCostCalculator.Pages
     
