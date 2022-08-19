@@ -23,10 +23,11 @@ namespace CarpetCostCalculator.Pages
             {
                 Carpet.AreaOfCarpet = CarpetOperations.CalculateRoomArea(carpet.Width, carpet.Length);
                 Carpet.Cost = CarpetOperations.CalculateCarpetFinalCost(Int32.Parse(carpet.CarpetType), 
-                                                                        Carpet.AreaOfCarpet, carpet.Installation,
+                                                                        Carpet.AreaOfCarpet, 
+                                                                        carpet.Installation,
                                                                         carpet.Underlay,
                                                                         Carpet.InstallationCost,
-                                                                        Carpet.UnderlayCost);
+                                                                        Carpet.UnderlayCost, Carpet.PerSquareMeter);
 
             }
         }

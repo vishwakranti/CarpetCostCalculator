@@ -26,6 +26,7 @@ namespace CarpetCostCalculator.Model
 
         public const decimal InstallationCost = 20.0m;
         public const decimal UnderlayCost = 20.0m;
+        public const decimal PerSquareMeter = 20.0m;
 
         [Display(Name = "Room Area")]
         public decimal AreaOfCarpet { get; set; }

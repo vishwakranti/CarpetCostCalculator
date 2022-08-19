@@ -8,12 +8,13 @@
             return length * width;
         }
 
-        public static decimal CalculateCarpetFinalCost(int costPerSqM, decimal areaOfCarpet, 
+        public static decimal CalculateCarpetFinalCost(int carpetTypeCost, decimal areaOfCarpet, 
                                                         bool installation, bool underlay,       
                                   
-                                                        decimal installationCost, decimal underlayCost)
+                                                        decimal installationCost, decimal underlayCost,
+                                                        decimal costPerSquareMeter)
         {
-            decimal finalCost = costPerSqM * areaOfCarpet;
+            decimal finalCost = carpetTypeCost * areaOfCarpet *costPerSquareMeter;
             if (installation)
                 finalCost = finalCost + installationCost;
 
